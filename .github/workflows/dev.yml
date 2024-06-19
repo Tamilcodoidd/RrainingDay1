@@ -12,7 +12,7 @@ jobs:
     steps:
     - name: Send event to QA repository
       run: |
-        curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+        curl -X POST -H "Authorization: token ${{ secrets.NGITHUB_TOKEN }}" \
         -H "Accept: application/vnd.github.v3+json" \
         https://github.com/Tamilcodoidd/Letz-watch/dispatches \
         -d '{"event_type":"dev_push", "client_payload":{}}'
